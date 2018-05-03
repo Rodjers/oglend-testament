@@ -16,7 +16,7 @@ class App extends Component {
         </header>
         <div className="App-container">
           <BrowserRouter>
-            <div>
+            <div className="container form-container">
               <Route exact path="/" component={InfoForm} />
               <Route path="/will" component={WillMaker} />
             </div>

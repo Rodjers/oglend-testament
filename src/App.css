@@ -7,18 +7,13 @@
 
 .App-header {
   text-align: center;
-  background-color: #222;
-  height: 150px;
+  background-color: #003056;
+  height: 195px;
   padding: 20px;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
-}
-
-.App-container {
-  display: flex;
-  justify-content: center;
 }
 

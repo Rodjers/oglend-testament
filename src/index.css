@@ -1,5 +1,39 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans", Arial, Tahoma, sans-serif;
+  background-color: #76777f;
+}
+
+.info-box {
+  background-color: lightgray;
+  margin-bottom: 8px;
+}
+
+.info-box-title {
+  background-color: #aaaaaa;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info-box-body {
+  padding: 4px;
+  font-size: 12px;
+}
+
+.form-container {
+  margin-top: -45px;
+  background-color: #f0efed;
+  height: 100%;
+  padding-bottom: 15px;
+}
+
+.form-container input {
+  border-radius: 0;
+}
+
+.form-container .btn {
+  border-color: #ced4da;
+  border-radius: 0;
 }
