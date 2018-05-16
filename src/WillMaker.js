@@ -43,7 +43,7 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
-              <button className="btn btn-default">Legg til aktiva</button>
+              <button className="btn btn-default">Legg til</button>
               <div style={{ height: '16px' }} />
             </div>
           </div>
@@ -86,7 +86,7 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
-              <button className="btn btn-default">Legg til aktiva</button>
+              <button className="btn btn-default">Legg til</button>
               <div style={{ height: '16px' }} />
             </div>
           </div>
@@ -113,7 +113,7 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
-              <button className="btn btn-default">Legg til aktiva</button>
+              <button className="btn btn-default">Legg til</button>
               <div style={{ height: '16px' }} />
             </div>
           </div>
@@ -140,7 +140,7 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
-              <button className="btn btn-default">Legg til aktiva</button>
+              <button className="btn btn-default">Legg til</button>
               <div style={{ height: '16px' }} />
             </div>
           </div>
@@ -167,7 +167,7 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
-              <button className="btn btn-default">Legg til aktiva</button>
+              <button className="btn btn-default">Legg til</button>
               <div style={{ height: '16px' }} />
             </div>
           </div>

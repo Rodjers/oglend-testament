@@ -23,10 +23,12 @@ class InfoForm extends Component {
     super(props);
     this.state = {
       spouse: false,
-      children: 0
+      children: 0,
+      weirdOwn: false
     };
     this.onSpouseClick = this.onSpouseClick.bind(this);
     this.onChildrenChange = this.onChildrenChange.bind(this);
+    this.onWeirdOwnClick = this.onWeirdOwnClick.bind(this);
   }
 
   onSpouseClick(ev) {
@@ -41,6 +43,14 @@ class InfoForm extends Component {
     this.setState(
       { ...this.state,
         children: ev.target.value
+      }
+    )
+  }
+
+  onWeirdOwnClick(ev) {
+    this.setState(
+      { ...this.state,
+        weirdOwn: ev.target.checked
       }
     )
   }
@@ -78,6 +88,33 @@ class InfoForm extends Component {
           </div>
           <div className="row">
             <div className="col">
+              <h4>Eiendeler</h4>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-4">
+              <div className="form-group">
+                <label htmlFor="spouseName">Type</label>
+                <input type="text" className="form-control" id="spouseName" value="Kontanter" />
+              </div>
+            </div>
+            <div className="col-4">
+              <div className="form-group">
+                <label htmlFor="spouseName">Verdi</label>
+                <input type="text" className="form-control" id="spouseName" value="10 000 000,-" />
+              </div>
+            </div>
+            <div className="col">
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <button className="btn btn-default">Legg til eiendel</button>
+              <div style={{ height: '16px' }} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
               <h3>Ektefelle</h3>
             </div>
           </div>
@@ -94,6 +131,7 @@ class InfoForm extends Component {
             </div>
           </div>
           { this.state.spouse &&
+          <div>
             <div className="row">
               <div className="col-8">
                 <div className="form-group">
@@ -104,6 +142,65 @@ class InfoForm extends Component {
               <div className="col">
               </div>
             </div>
+            <div className="row">
+              <div className="col-8">
+                <div className="form-check">
+                  <input onChange={this.onWeirdOwnClick} type="checkbox" className="form-check-input" id="spouseCheck"/>
+                  <label className="form-check-label" htmlFor="spouseCheck">Har dere særeie?</label>
+                </div>
+              </div>
+              <div className="col">
+                <InfoBox title="Særeie"
+                         body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."/>
+              </div>
+            </div>
+            { this.state.weirdOwn &&
+            <div>
+              <div className="row">
+                <div className="col">
+                  <h4>Arvelaters del i særeie</h4>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-4">
+                  <div className="form-group">
+                    <label htmlFor="spouseName">Type</label>
+                    <input type="text" className="form-control" id="spouseName" value="Kontanter" />
+                  </div>
+                </div>
+                <div className="col-4">
+                  <div className="form-group">
+                    <label htmlFor="spouseName">Verdi</label>
+                    <input type="text" className="form-control" id="spouseName" value="2 000 000,-" />
+                  </div>
+                </div>
+                <div className="col">
+                </div>
+              </div>
+              <div className="row">
+                <div className="col">
+                  <h4>Ektefellens del i særeie</h4>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-4">
+                  <div className="form-group">
+                    <label htmlFor="spouseName">Type</label>
+                    <input type="text" className="form-control" id="spouseName" value="Kontanter" />
+                  </div>
+                </div>
+                <div className="col-4">
+                  <div className="form-group">
+                    <label htmlFor="spouseName">Verdi</label>
+                    <input type="text" className="form-control" id="spouseName" value="1 000 000,-" />
+                  </div>
+                </div>
+                <div className="col">
+                </div>
+              </div>
+            </div>
+            }
+          </div>
           }
           <div className="row">
             <div className="col">
