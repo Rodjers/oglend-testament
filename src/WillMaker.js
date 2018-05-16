@@ -43,6 +43,12 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
+              <button className="btn btn-default">Legg til aktiva</button>
+              <div style={{ height: '16px' }} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
               <h4>Barn 1</h4>
             </div>
           </div>
@@ -80,6 +86,12 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
+              <button className="btn btn-default">Legg til aktiva</button>
+              <div style={{ height: '16px' }} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
               <h4>Barn 2</h4>
             </div>
           </div>
@@ -97,6 +109,12 @@ class WillMaker extends Component {
               </div>
             </div>
             <div className="col">
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <button className="btn btn-default">Legg til aktiva</button>
+              <div style={{ height: '16px' }} />
             </div>
           </div>
           <div className="row">
@@ -122,6 +140,12 @@ class WillMaker extends Component {
           </div>
           <div className="row">
             <div className="col">
+              <button className="btn btn-default">Legg til aktiva</button>
+              <div style={{ height: '16px' }} />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
               <h4>Røde Kors</h4>
             </div>
           </div>
@@ -141,7 +165,15 @@ class WillMaker extends Component {
             <div className="col">
             </div>
           </div>
+          <div className="row">
+            <div className="col">
+              <button className="btn btn-default">Legg til aktiva</button>
+              <div style={{ height: '16px' }} />
+            </div>
+          </div>
         </form>
+        <button className="btn btn-default">Legg til arving</button>
+        <div style={{ height: '16px' }} />
         <Link to="/form"><button className="btn btn-default">Tilbake</button></Link>
         <div style={{ display: 'inline-block', width: '8px' }} />
         <button className="btn btn-default">Lag Testamente</button>
