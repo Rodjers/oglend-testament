@@ -82,6 +82,7 @@ class InfoForm extends Component {
         <div className="row">
           <div className="col">
             <h1>Innformasjonsinhenting</h1>
+            <p>Vi trenger litt informasjon fra deg for å finne hvilket spillerom du har for å testamentere av dine verdier innenfor arvelovens begrensinger.</p>
           </div>
         </div>
         <form>
@@ -105,12 +106,12 @@ class InfoForm extends Component {
             <div className="col-8">
               <div className="form-check">
                 <input onChange={this.onSpouseClick} type="checkbox" className="form-check-input" id="spouseCheck"/>
-                <label className="form-check-label" htmlFor="spouseCheck">Har ektefelle?</label>
+                <label className="form-check-label" htmlFor="spouseCheck">Har du ektefelle?</label>
               </div>
             </div>
             <div className="col">
               <InfoBox title="Ektefelle"
-                       body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."/>
+                       body="Med ektefelle menes at man er gift ihht. ekteskapsloven eller at man er samboere med en samboeravtale..."/>
             </div>
           </div>
           <div className="row">
@@ -121,7 +122,7 @@ class InfoForm extends Component {
               </div>
             </div>
             <div className="col">
-              <InfoBox title="Barn" body="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."/>
+              <InfoBox title="Barn" body='Oppgi antall barn som er dine. Dvs barn med evt. nåværende ektefelle og barn fra tidligere forhold.' />
             </div>
           </div>
           <div className="row">
