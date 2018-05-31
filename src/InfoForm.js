@@ -166,6 +166,13 @@ class InfoForm extends Component {
             {children}
           </div>
           }
+          <div className="row">
+            <div className="col">
+              <h3>Disclaimer</h3>
+              <p>Her kan vi legge inn litt informasjon om hva som ikke er dekket av denne portalen og noe sjekkbokser som må
+              krysses av. F.eks en boks hvor bruker bekrefter at hen ikke sitter i uskiftet bo, at ikke det er odel involvert o.l.</p>
+            </div>
+          </div>
         </form>
         <Link to="/"><button className="btn btn-default">Tilbake</button></Link>
         <div style={{ display: 'inline-block', width: '8px' }} />

@@ -4,16 +4,22 @@ import './App.css';
 const Asset = ({id}) => {
   return (
     <div className="row">
-      <div className="col-3">
+      <div className="col-2">
         <div className="form-group">
           <label htmlFor="spouseName">Type</label>
-          <input type="text" className="form-control" id="spouseName" defaultValue="Kontanter" />
+          <input type="text" className="form-control" id="spouseName" defaultValue="Eiendom" />
         </div>
       </div>
-      <div className="col-3">
+      <div className="col-2">
+        <div className="form-group">
+          <label htmlFor="spouseName">Beskrivelse</label>
+          <input type="text" className="form-control" id="spouseName" defaultValue="Nøtteveien 14A" />
+        </div>
+      </div>
+      <div className="col-2">
         <div className="form-group">
           <label htmlFor="spouseName">Verdi</label>
-          <input type="text" className="form-control" id="spouseName" defaultValue="10 000 000,-" />
+          <input type="text" className="form-control" id="spouseName" defaultValue="1 850 000,-" />
         </div>
       </div>
       <div className="col-2">
