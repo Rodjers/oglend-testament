@@ -11,7 +11,7 @@ class WillMaker extends Component {
           <div className="col">
             <h1>Testament</h1>
             <h2>Pliktdelsarv</h2>
-            <p>En kortfattet tekst ok pliktdelsarv som forklarer med ord de begrensninger vi har lagt inn i portalen.
+            <p>En kortfattet tekst om pliktdelsarv som forklarer med ord de begrensninger vi har lagt inn i portalen.
             De eiendeler som ikke fordeles ved testament vil bli fordelt ihht. arveloven. </p>
           </div>
         </div>
