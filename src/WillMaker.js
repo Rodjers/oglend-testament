@@ -19,10 +19,10 @@ class WillMaker extends Component {
           <div style={{ height: '40px' }} />
           <div className="row">
             <div className="col-6">
-              <h3>Eiendeler</h3>
+              <h3>Eiendeler (Verdi: 8 350 000,-)</h3>
             </div>
             <div className="col-6">
-              <h3>Fordeling</h3>
+              <h3>Fordeling (Pliktdel: 1 360 000,-)</h3>
             </div>
           </div>
           <div className="row">
